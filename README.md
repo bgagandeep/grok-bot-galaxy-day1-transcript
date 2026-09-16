@@ -1,12 +1,7 @@
-# Grok Bot Galaxy — Day 1 transcript + highlights
+# Grok Bot Galaxy — Day 1 transcript (DRAFT — being replaced)
 
-Unofficial community transcript of **Day 1: Grok Bot Galaxy Livestream**.
+**Status: draft / not for sharing.** Board rejected the first ASR pass (Whisper `base`, no speaker diarization, noisy brand names).
 
-- **Highlights:** [HIGHLIGHTS.md](./HIGHLIGHTS.md)
-- **Full transcript:** [transcript.txt](./transcript.txt)
-- **Captions:** [transcript.srt](./transcript.srt)
-- **ASR notes:** [ASR-NOTES.md](./ASR-NOTES.md)
+A **V2** pass with a stronger model + speaker diarization is in progress. This repo will be updated when that lands. Do not quote this draft as authoritative.
 
-**Watch:** https://x.com/i/broadcasts/1AxRnZbVpjaxl · https://luma.link/YDHcs5LMRo
-
-Tags: @bot @grok — built so anyone catching up can skim Day 1 without rewatching ~9 hours.
+Watch: https://x.com/i/broadcasts/1AxRnZbVpjaxl · https://luma.link/YDHcs5LMRo
