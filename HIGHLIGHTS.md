@@ -1,4 +1,7 @@
-# Day 1 highlights — Grok Bot Galaxy Livestream
+# Highlights — Day 1 (V2 diarized)
+
+> Timestamps refer to the **V2** Gemini diarized transcript (`transcript_diarized.txt`).
+> V1 Whisper `base` draft is superseded. Speaker IDs are per-chunk `SPEAKER_XX` (see `SPEAKER_MAPPING_NOTE.md`).
 
 **Source:** [X Live replay](https://x.com/i/broadcasts/1AxRnZbVpjaxl) · [luma.link](https://luma.link/YDHcs5LMRo)  
 **When:** ~8h 45m live build day (SF studio next to Moscone / Dreamforce)  

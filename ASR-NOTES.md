@@ -1,37 +1,23 @@
-# Day 1: Grok Bot Galaxy Livestream — Transcript
+# ASR notes — Day 1 Grok Bot Galaxy (V2)
 
-## Source
-- Title: Day 1: Grok Bot Galaxy Livestream
-- Host: Grok Bot (@bot)
-- Short link: https://luma.link/YDHcs5LMRo
-- X broadcast: https://x.com/i/broadcasts/1AxRnZbVpjaxl
-- Duration: ~PT8H45M13S (probed 31500.4s / ~8h 45m)
-- Audio extracted from Periscope/X HLS replay (lowest 320p A/V stream, audio-only mono 16 kHz 64 kbps MP3)
+## Pipeline
+- **Model:** `gemini-3.5-transcribe` (Gemini API / google-genai)
+- **Features:** speaker diarization + word timestamps, `language_codes=["en-US"]`
+- **Audio:** 18× ~30-minute MP3 chunks (mono 16 kHz); full show ~8h45m
+- **Outputs:** diarized TXT / SRT / JSONL with absolute timestamps from stream start
+- **Coverage:** through ≈ `08:44:43` (~31483s); 18/18 chunks completed
+- **Wall time:** ~30–35 minutes API time with ~75s inter-chunk pacing (hit paid-tier input-token RPM limits)
 
-## Outputs
-| File | Description |
-|------|-------------|
-| `transcript.txt` | Plain-text transcript with timestamps about every 30s |
-| `transcript.srt` | SubRip captions (absolute timestamps from stream start) |
-| `audio.mp3` | Full mono 16 kHz audio (~252 MB) |
-| `progress.json` | Job metadata |
+## Speakers
+- Labels: `SPEAKER_XX` **per chunk** (Gemini `spk:N` remapped locally each half-hour)
+- Same person may get a new ID after a chunk boundary — see `SPEAKER_MAPPING_NOTE.md`
+- Early intros (evidence-based, tentative): SPEAKER_00≈Matt Palmer, SPEAKER_01≈Lauren (potato), SPEAKER_02≈Roshan
 
-## ASR
-- Engine: **faster-whisper** (CTranslate2)
-- Model: **base**, English, CPU `int8`
-- Settings: VAD on, `beam_size=1`, processed in 18× ~30-minute chunks
-- Segments: **10,322**
-- Gaps: **none** (all chunks completed)
-- Wall time for ASR: ~9 minutes
+## Limitations
+- Custom vocabulary cannot be combined with diarization → occasional brand slips (e.g. xAI→“SpaceX AI”); still far better than V1 Whisper `base`
+- 3+ speaker attribution is experimental
+- Some API word-timestamp outliers were sanitized before merge
+- Long monologues split on pauses for readability
 
-## Known limitations / gaps
-- No intentional content gaps; full duration covered.
-- Brand/product names may be misheard (e.g. “Grok Bot” → “GROCHFOT”, “xAI” → “SpaceX AI”).
-- Overlapping speakers, music, and quiet sections reduce accuracy.
-- `base` model prioritizes throughput over max accuracy; upgrade to `small`/`medium` for higher quality if needed.
-
-## Reproduce (box)
-```bash
-# audio already at audio.mp3; chunks under chunks/
-./venv/bin/python -u transcribe_chunks.py
-```
+## V1 (superseded)
+- faster-whisper `base`, CPU int8, no diarization — archived as `transcript_v1_whisper_base_draft.*`
