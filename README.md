@@ -4,6 +4,31 @@ Unofficial **HQ** transcript of the Day 1 Grok Bot Galaxy livestream with **spea
 
 Watch: https://x.com/i/broadcasts/1AxRnZbVpjaxl · https://luma.link/YDHcs5LMRo
 
+
+## Day 2 — Game studio pivot (HQ V2 named)
+
+**Watch:** https://x.com/i/broadcasts/1PKqrNyvmYwGb · https://luma.com/3ifrgttw
+
+Broadcast title: **Grok Bot builds a Game Studio LIVE** (~8h 23m).
+
+| File | Role |
+|------|------|
+| [day2/KEY_TAKEAWAYS.md](./day2/KEY_TAKEAWAYS.md) | Board / share takeaways (canonical for Day 2) |
+| [day2/transcript_named.txt](./day2/transcript_named.txt) | Full Day 2 named transcript (canonical) |
+| [day2/transcript_diarized.txt](./day2/transcript_diarized.txt) | HQ diarized transcript (`SPEAKER_XX`) |
+| [day2/transcript_diarized.srt](./day2/transcript_diarized.srt) | HQ diarized captions |
+| [day2/transcript_diarized.jsonl](./day2/transcript_diarized.jsonl) | Structured segments |
+| [day2/sample_first_15min_named.txt](./day2/sample_first_15min_named.txt) | First ~15 minutes, named |
+| [day2/SPEAKER_MAPPING_NOTE.md](./day2/SPEAKER_MAPPING_NOTE.md) | Evidence-based per-chunk speaker maps |
+| [day2/README.md](./day2/README.md) | Method / limits / reproduce |
+
+Diarized + named speakers (**~95% mapped** where evidence supports). Unmapped turns stay `SPEAKER_XX`.
+
+### Superseded Day 2 whisper-base drafts
+Do not use these as the Day 2 source of record.
+
+- `day2/transcript.txt` / `day2/transcript.srt` / `day2/ASR-NOTES.md` / `day2/sample_first_15min.txt` → use the HQ named/diarized files above.
+
 ## Start here
 | File | Description |
 |------|-------------|
