@@ -29,6 +29,25 @@ Do not use these as the Day 2 source of record.
 
 - `day2/transcript.txt` / `day2/transcript.srt` / `day2/ASR-NOTES.md` / `day2/sample_first_15min.txt` → use the HQ named/diarized files above.
 
+## Day 3 — Launch day: Thursday Arena (HQ V2 named)
+
+**Watch:** https://x.com/i/broadcasts/1YGNrbXEeazGw · https://luma.com/3ifrgttw
+
+Broadcast title: **Building a company in 3 days - launching today!** (~7h 58m).
+
+| File | Role |
+|------|------|
+| [day3/KEY_TAKEAWAYS.md](./day3/KEY_TAKEAWAYS.md) | Board / share takeaways (canonical for Day 3) |
+| [day3/transcript_named.txt](./day3/transcript_named.txt) | Full Day 3 named transcript (canonical) |
+| [day3/transcript_diarized.txt](./day3/transcript_diarized.txt) | HQ diarized transcript (`SPEAKER_XX`) |
+| [day3/transcript_diarized.srt](./day3/transcript_diarized.srt) | HQ diarized captions |
+| [day3/transcript_diarized.jsonl](./day3/transcript_diarized.jsonl) | Structured segments |
+| [day3/sample_first_15min_named.txt](./day3/sample_first_15min_named.txt) | First ~15 minutes, named |
+| [day3/SPEAKER_MAPPING_NOTE.md](./day3/SPEAKER_MAPPING_NOTE.md) | Evidence-based per-chunk speaker maps |
+| [day3/README.md](./day3/README.md) | Method / limits / reproduce |
+
+Shipped on stream: **Thursday Arena** (ex-Cupcake) at thursdayarena.com — chat playtest + Elo leaderboard. Diarized + named speakers (**~90% mapped** where evidence supports).
+
 ## Start here
 | File | Description |
 |------|-------------|
